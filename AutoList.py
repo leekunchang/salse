@@ -14,7 +14,7 @@ pag.hotkey('ctrl','a') # 전체 복사
 pag.press('delete')
 time.sleep(0.5) # 화면띄우는 시간 0.5초지연
 pag.click(487,280) # 사양입력창 재클릭
-pag.typewrite(model_cord.index(0)) # CN(희망차량코드) 입력
+# pag.typewrite(model_cord.index(0)) # CN(희망차량코드) 입력
 pag.press('enter') # 조회
 pag.press('tap') # 탭 입력
 pag.press('end') # 스크롤 최하단 이동
