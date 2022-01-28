@@ -47,3 +47,4 @@ pag.click(execel_data)
 # gugpan = (717,1049)
 # salse_code = (486,277)
 # execel_data = (1556,354)
+# 수정1
