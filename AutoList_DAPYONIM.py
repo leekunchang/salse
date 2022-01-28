@@ -17,14 +17,19 @@ time.sleep(0.5) # 화면띄우는 시간 0.5초지연
 pag.click(487,280) # 사양입력창 재클릭
 pag.typewrite(model_cord) # CN(희망차량코드) 입력
 pag.press('enter') # 조회
+time.sleep(5) # 화면띄우는 시간 5초지연
 pag.press('tap') # 탭 입력
 pag.press('end') # 스크롤 최하단 이동
 pag.press('pgdn') # 조회
 time.sleep(5) # 화면띄우는 시간 5초지연
 
-salse_list = 0
+salse_list = 1
 while salse_list < playtime:
     salse_list = salse_list + 1
     pag.press('end') # 스크롤 최하단 이동
     pag.press('pgdn') # 조회
     time.sleep(5) # 화면띄우는 시간 5초지연
+
+pag.click(1562,353)
+time.sleep(20) # 엑셀추출 시간
+pag.hotkey('alt','F4') # 엑셀 닫기
